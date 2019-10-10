@@ -1,6 +1,24 @@
 .toybus{
   padding:0% 29%;
   border-top:2px dashed grey;
+ 
+  @media @mobile{
+    display: flex;
+    justify-content: center;
+    padding:0% 15px;
+    margin:0%;
+  }
+}
+
+.intro{
+  display: flex;
+  flex-direction: column;
+  margin:1% 29%;
+
+  @media @mobile{
+    margin:25px 15px;
+    border-bottom: 2px dashed grey;
+  }
 }
 
 .home {
@@ -12,19 +30,43 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
-   
+   @media @mobile{
+     display:flex;
+     flex-direction: column;
+     margin:25px 15px;
+    border: 2px solid grey;
+
+   }
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      .img-content-fun{
+        display:none;
+      }
+
+      @media @mobile{
+        padding:0%;
+        width:100%;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
 
+      @media @mobile{
+        padding:0%;
+        width:100%;
+      }
+
       img {
         border-radius: 10px;
+
+        @media @mobile{
+          width:100%;
+        }
       }
     }
   }
@@ -66,6 +108,6 @@
   }
 
   .btn{
-    .btn-style(180px, 40px, rgb(0, 102, 102);
+    .btn-style(180px, 40px, rgb(0, 102, 102));
   }
 }// home
