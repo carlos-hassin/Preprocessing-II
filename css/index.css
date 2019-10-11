@@ -244,15 +244,15 @@ img {
     display: flex;
     flex-direction: column;
     margin: 25px 15px;
-    border: 2px solid grey;
   }
 }
 .home .content-section .text-content {
   width: 48%;
   padding-right: 1%;
 }
-.home .content-section .text-content .img-content-fun {
+.home .content-section .text-content .mobile-img {
   display: none;
+  border: 2px solid grey;
 }
 @media (max-width: 500px) {
   .home .content-section .text-content {
@@ -273,14 +273,15 @@ img {
 .home .content-section .img-content img {
   border-radius: 10px;
 }
-@media (max-width: 500px) {
-  .home .content-section .img-content img {
-    width: 100%;
-  }
-}
 .home .inverse-content {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
+}
+@media (max-width: 500px) {
+  .home .inverse-content {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
 .home .inverse-content .text-content {
   padding-left: 1%;
@@ -294,8 +295,18 @@ img {
   width: 75%;
   margin: 0 auto 30px;
 }
+@media (max-width: 500px) {
+  .home .content-destination {
+    width: 95%;
+  }
+}
 .home .content-destination img {
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .content-destination img {
+    margin: 0%;
+  }
 }
 .home .content-pick {
   padding-top: 30px;
@@ -303,9 +314,25 @@ img {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-pick {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 15px;
+    padding: 5% 10%;
+  }
+}
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .home .btn {
   width: 180px;
@@ -317,6 +344,19 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media (max-width: 500px) {
+  .home .btn {
+    width: 350px;
+    height: 40px;
+    background-color: #0099cc;
+    font-size: 20px;
+    color: white;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .footer {
   width: 100%;
